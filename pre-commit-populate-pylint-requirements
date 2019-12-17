@@ -40,14 +40,15 @@ def main():
         default='pylint'
     )
     parser.add_argument(
-        'requirements-files',
-        nargs='+'
+        'files',
+        nargs='+',
+        help='The requirements files to get the requirements from'
     )
 
     options = parser.parse_args()
 
     requirements = []
-    for requirements_file in options.requirements_files:
+    for requirements_file in options.files:
         requirements.extend(_parse_requirements_file(requirements_file))
 
     if not requirements:
