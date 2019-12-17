@@ -39,7 +39,6 @@ def main():
         '-i', '--pylint-hook-id',
         default='pylint'
     )
-    parser.add
     parser.add_argument(
         'requirements-files',
         nargs='+'
