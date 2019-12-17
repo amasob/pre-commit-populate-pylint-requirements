@@ -1,0 +1,7 @@
+- id: populate-pylint-requirements
+  name: Populate PyLint Hook Additional Requirements
+  entry: pre-commit-populate-pylint-requirements
+  language: python
+  args: []
+  additional_dependencies: []
+  require_serial: true
