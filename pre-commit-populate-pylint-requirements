@@ -32,17 +32,17 @@ def _parse_requirements_file(requirements_file):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        '-r', '--requirements-file',
-        action='append',
-        default=[]
-    )
-    parser.add_argument(
         '-c', '--pre-commit-config-file',
         default='.pre-commit-config.yaml'
     )
     parser.add_argument(
         '-i', '--pylint-hook-id',
         default='pylint'
+    )
+    parser.add
+    parser.add_argument(
+        'requirements-files',
+        nargs='+'
     )
 
     options = parser.parse_args()
