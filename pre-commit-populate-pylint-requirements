@@ -32,7 +32,7 @@ def _parse_requirements_file(requirements_file):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        '--requirements-file', '-r',
+        '-r', '--requirements-file',
         action='append',
         default=[]
     )
