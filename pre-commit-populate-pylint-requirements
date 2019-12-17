@@ -25,7 +25,8 @@ def _parse_requirements_file(requirements_file):
             line = line.strip()
             if not line or line.startswith(('#', '-r')):
                 continue
-            parsed_requirements.append(line)
+            split_line = line.split('#', 1)
+            parsed_requirements.append(split_line[0].strip())
     return parsed_requirements
 
 
