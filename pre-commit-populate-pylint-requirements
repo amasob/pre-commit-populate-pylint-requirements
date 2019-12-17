@@ -94,7 +94,7 @@ def main():
         )
 
     if not requirements_changed:
-        parser.exit(0, 'No changes were made')
+        parser.exit(0)
 
     with open(options.pre_commit_config_file, 'w') as wfh:
         yaml.dump(pre_commit_config, wfh)
