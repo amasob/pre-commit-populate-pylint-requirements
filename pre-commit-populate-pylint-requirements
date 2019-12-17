@@ -47,7 +47,7 @@ def main():
     options = parser.parse_args()
 
     requirements = []
-    for requirements_file in options.requirements_file:
+    for requirements_file in options.requirements_files:
         requirements.extend(_parse_requirements_file(requirements_file))
 
     if not requirements:
